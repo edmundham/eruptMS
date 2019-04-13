@@ -21,15 +21,6 @@ Edmund is using "Server=tcp:127.0.0.1,1433;Database=Erupt;UID=sa;PWD=Password123
 [Code Conventions](/docs/conventions.md)
 [Database Setup](/docs/dbsetup.md)
 
-# Environments
-
-http://deimos.edu.bcit.ca -> TEST
-
-http://deimos.edu.bcit.ca:5000 -> STAGE
-
-http://deimos.edu.bcit.ca:5001 -> UAT (not initilized, builds will fail for the time being)
-
-http://deimos.edu.bcit.ca:5001 -> JENKINS (noah's branch)
 
 #### Production Deployment Instructions
 
@@ -55,4 +46,6 @@ Stage 3: build container
 `docker-compose -f build.yml up --build`
 (optional) in production, run `docker-compose -f build.yml up --build -d`. the -d flag detaches your console from the container
 2. Point your browser to localhost:{the-port-you-chose)
-
+3. Sign in with 
+Username: cameron.lay@infosys.ca
+Password: Password123!
